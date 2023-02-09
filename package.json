@@ -1,0 +1,24 @@
+{
+  "name": "node-js-rest-api-example",
+  "version": "1.0.0",
+  "description": "Simple api methods for interacting with a user account",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lacartez/node-js-rest-api-example"
+  },
+  "bugs": {
+    "url": "https://github.com/lacartez/node-js-rest-api-example/issues"
+  },
+  "homepage": "https://github.com/lacartez/node-js-rest-api-example",
+  "author": "lacartez (Дмитрий)",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^6.9.1"
+  }
+}
