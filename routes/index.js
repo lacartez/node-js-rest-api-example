@@ -11,4 +11,10 @@ module.exports = async (app) => {
   app.route('/method/account.get').get(accountController.get);
 
   app.route('*').all((_req, res) => sendError(res,'Unknown method passed.'));
+
+  app.use((error, req, res, next) => {
+    if (error) {
+      sendError(res, 'Internal server error.', error)
+    }
+  });
 };
